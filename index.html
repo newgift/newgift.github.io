@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://www.yaosiyao.com/niit_project/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	<style>
+*{
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+body{
+	margin:0 auto;
+	font-family:"Comic Sans MS", cursive,"KaiTi","楷体";
+	font-size: 18px;
+}
+#header{
+	background-color:#FFC;
+	width: 100%;
+}
+img{
+	 width:50px;
+	 height:50px;
+}
+button{
+	width:50px;
+	background-color:#00c0ef;
+	border:#086ed5;
+	color:white;
+	font-family:KaiTi;
+	font-size: 18px;
+	border-radius:4px;
+}
+#container{
+	background-color:#FFC;
+	width: 100%;
+	float:left;
+}
+ul{
+	list-style: none;
+}
+li{
+
+}
+#container #nav ul>li{
+	width: 12.5%;
+	float: left;
+}
+#container #nav ul>li ul{
+	width: 100%;
+	opacity: 0.4;
+	display: none;
+}
+#container #nav ul>li ul li{
+	width: 100%;
+}
+#footer{
+	background-color:#CF9;
+	width: 100%;
+	float: left;
+}
+</style>
+<script src="js/jquery-2.2.3.min.js"></script>
+<title>Chinese Culture</title>
+</head>
+
+<body>
+	<div id="header">Chinese Culture
+    <!--img src="./img/logo_tea.jpg"-->
+    <button>登录</button>
+    <button>注册</button>
+    </div>
+	<div id="container">
+		<div id="nav">
+			<ul>
+				<li>
+					琴棋书画
+					<hr>
+					<ul>
+						<li>琴</li><br>
+						<li>棋</li><br>
+						<li>书</li><br>
+						<li>画</li>
+					</ul>
+				</li>
+				<li>
+					传统节日
+					<hr>
+					<ul>
+						<li>春节</li><br>
+						<li>元宵</li><br>
+						<li>清明</li><br>
+						<li>端午</li><br>
+						<li>七夕</li><br>
+						<li>中秋</li><br>
+						<li>重阳</li><br>
+						<li>冬至</li><br>
+						<li>除夕</li>
+					</ul>
+				</li>
+				<li>
+					中国戏剧
+					<hr>
+					<ul>
+						<li>京剧</li><br>
+						<li>越剧</li><br>
+						<li>秦腔</li><br>
+						<li>川剧</li><br>
+						<li>黄梅戏</li><br>
+						<li>粤剧</li><br>
+						<li>潮剧</li>
+					</ul>
+				</li>
+				<li>
+					美食文化
+					<hr>
+					<ul>
+						<li>八大菜系</li><br>
+						<li>茶</li>
+					</ul>
+				</li>
+				<li>传统中医<hr></li>
+				<li>衣冠服饰<hr></li>
+				<li>
+					思想文化<hr>
+					<ul>
+						<li>道家</li><br>
+						<li>儒家</li><br>
+						<li>法家</li><br>
+						<li>墨家</li>
+					</ul>
+				</li>
+                <li>
+                	美丽风景<hr>
+                    <ul>
+                    	<li>建筑</li>
+                        <li>山光</li>
+                        <li>水色</li>
+                    </ul>
+                </li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">Copyright ©Alisa,Krystal,Yolanda All Rights Reserved.</div>
+	<script>
+		$('document').ready(function () {
+			$('#nav ul>li').mouseenter(function () {
+				$(this).contents("ul").css("opacity","0.5");
+				$(this).contents("ul").slideDown();
+				$(this).find("hr").css({"border":0,"height":"2px","background-color":"red"});
+			});
+			$('#nav ul>li').mouseleave(function () {
+				$(this).css("background","none");
+				$(this).contents("ul").slideUp();
+				$(this).find("hr").css({"border":0,"height":"1px","background-color":"blue"});
+			});
+			$('#nav ul>li>ul>li').mouseenter(function () {
+				$('#nav ul>li>ul').css("opacity","1");
+				$('this').css("font","bold");
+			});
+			$('#nav ul>li>ul>li').mouseleave(function () {
+			});
+		});
+	</script>
+
+</body></html>
